@@ -437,13 +437,10 @@ margin-top: 20%;
   margin-top: 5px;
   text-align: center;
 }
-/*
+
 .footer-p {
   width: 85%;
-  text-align: center;
-  justify-content: center;
-  justify-self: center;
-} */
+}
 
 
 @media screen and (max-width: 800px) {
