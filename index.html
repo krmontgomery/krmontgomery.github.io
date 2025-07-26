@@ -10,6 +10,11 @@ title: Kris Montgomery
         {% include grab-one-post.html %}
     </div>
     <div class="index-projects">
-        {% include grab-one-project.html %}
+        {% if site.projects and site.projects.size > 0 %}
+            {% include grab-one-project.html %}
+        {% else %}
+            <h1 class="post-list-heading" style="text-align: center;">Latest Project</h1>
+            <h3 style="width: 100%;text-align: center;">No content here just yet. <br> Check back later!</h3>
+        {% endif %}
     </div>
 </div>
