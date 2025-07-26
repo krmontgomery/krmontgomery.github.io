@@ -392,20 +392,58 @@ margin-top: 20%;
 }
 
 /* Footer */
-.footer-info{
-  width: 100%;
-  margin-top: 15px;
-  justify-items: center;
-  text-align: center;
-  align-items: center;
+.footer-wrapper {
+  border-top: 1px solid #4c4c5f;
+  padding: 30px 0;
 }
 
+.footer-contents {
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 0;
+  justify-content: center;
+  gap: 25px;
+}
+
+.fa-github {
+  font-size: 36px;
+}
+
+.fa-instagram {
+  font-size: 36px;
+}
+
+.fa-linkedin {
+  font-size: 40px;
+}
+
+.footer-social-li {
+  font-size: 36px;
+}
+
+ .footer-info{
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+}
+/*
 .footer-p {
   width: 85%;
   text-align: center;
   justify-content: center;
   justify-self: center;
-}
+} */
 
 
 @media screen and (max-width: 800px) {
