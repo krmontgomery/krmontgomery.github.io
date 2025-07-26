@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 65% 35%;
   gap: 50px;
+  margin-bottom: 60px;
 }
 
 .about-description {
@@ -47,10 +48,11 @@
 }
 
 /* Posts */
+.posts-container {
+  margin-top: 60px;
+}
+
 .posts-item {
-  /* display: flex;
-  flex-direction: column;
-  width: 100%; */
   margin-bottom:25px;
   text-align: center;
   margin-top: 5px;
@@ -195,6 +197,10 @@ margin-top: 20%;
 /* ------------------------- */
 /* Projects*/
 /* ------------------------- */
+.projects-container {
+  margin-top: 60px;
+}
+
 .projects-list-heading {
   font-size: 32px;
   font-weight: bold;
@@ -434,7 +440,7 @@ margin-top: 20%;
 
 .footer-info{
   width: 100%;
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: center;
 }
 
