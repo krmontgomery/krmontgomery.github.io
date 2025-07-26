@@ -1,0 +1,458 @@
+/* Navigation */
+
+/* About Page */
+.about-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 50px;
+}
+
+.about-description {
+  margin-top: 50px;
+}
+
+.about-image {
+  top: 30%;
+  margin-top: 50px;
+  position: sticky;
+}
+
+/* Index Who */
+.index-container {
+  display: flex;
+}
+
+.index-posts {
+  width: 60%;
+  margin-right: 30px;
+}
+
+.index-projects {
+  width:60%; 
+  text-align:right;
+}
+.who-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.index-post-date {
+  font-size: 14px;
+  color: #c0c0c0;
+}
+
+/* Posts */
+.posts-item {
+  /* display: flex;
+  flex-direction: column;
+  width: 100%; */
+  margin-bottom:25px;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #363644;
+  border: 1px solid #6b6b79;
+}
+
+.posts-tag-container {
+  color:#22b17a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+.posts-image {
+  width: 100%;
+}
+
+#posts-title {
+  display: block;
+  margin: 15px 0;
+  font-size: 28px;
+  width: 80%;
+  color:#f8f8f8;
+}
+
+.posts-title:hover {
+  color: #74b1f7;
+}
+
+.posts-meta-data {
+  text-align: center;
+}
+.posts-meta {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #bdbdbd;
+}
+
+.posts-meta-content {
+  text-align: left;
+  width: 75%;
+  font-size: 16px;
+  color: #828282;
+}
+
+/* Post */
+#post {
+margin-top: 20%;
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+#post-title {
+  color: #f8f8f8;
+  font-size: 28px;
+}
+
+.post-tag-container{
+  color:#22b17a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: left;
+  font-weight: bold;
+}
+
+.post-image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.post-list-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.post-meta {
+  color: #828282;
+  
+}
+
+.post-meta-data {
+  text-align: center;
+}
+
+
+.post-list {
+  list-style: none;
+}
+
+.post-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-link:hover {
+  text-decoration: none;
+  color: #35669e;
+}
+
+.post-author-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.post-author-div p {
+  margin-bottom: 0;
+}
+
+.post-author {
+  color: #55e0ab;
+}
+
+.post-date-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.post-date {
+  color: #55e0ab;
+}
+/* ------------------------- */
+/* Projects*/
+/* ------------------------- */
+.projects-list-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#projects-title{
+  display: block;
+  font-size: 30px;
+  margin: 0;
+  color:#f8f8f8;
+}
+
+.projects-meta-date {
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.projects-meta-content {
+  text-align: center;
+  color: #828282;
+}
+
+.projects-item {
+  max-width: 48%;
+  margin-bottom:25px;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #363644;
+  border: 1px solid #6b6b79;
+}
+
+.projects-list {
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.projects-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-link:hover {
+  text-decoration: none;
+  color: #35669e;
+}
+
+.projects-title:hover {
+  color: #74b1f7;
+}
+
+.projects-tag-container{
+  color:#22b17a;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.projects-image {
+  width: 100%;
+  height: 220px
+}
+
+@media screen and (max-width: 800px) {
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .projects-item {
+    max-width: 78%;
+  }
+  
+  .projects-image {
+    width: 100%;
+    height: 280px
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .projects-item {
+    max-width: 94%;
+  }
+  
+  .projects-image {
+    height: 220px
+  }
+}
+
+/* --------------------- */
+/* Project */
+/* --------------------- */
+#project {
+  margin-top: 20%;
+}
+
+.project-meta-data {
+  text-align: center;
+}
+
+.project-title {
+  font-size: 36px;
+}
+
+#project-title {
+  color: #f8f8f8;
+}
+
+.project-author-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-author-div p {
+  margin-bottom: 0;
+}
+
+.project-author {
+  color: #55e0ab;
+}
+
+.project-date-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-date {
+  color: #55e0ab;
+}
+
+.project-image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.project-tag-container{
+  color:#22b17a;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+/* misc */
+.tag-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #828282;
+}
+
+.previous-link{
+  width: 50%;
+}
+
+.next-link {
+  width: 50%;
+  text-align: right;
+}
+
+.back-to-posts {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-to-projects {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.bottom {
+  margin-top: 20px;
+  width: 100%
+}
+
+/* Footer */
+.footer-info{
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  .index-container  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #index-hr {
+    display:none;
+  }
+  
+  .posts-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .index-posts {
+    width: 80%;
+    margin-right:0;
+  }
+  
+  .index-projects {
+    margin-top: 25px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .index-posts {
+    width: 90%;
+  }
+  
+  .index-projects {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-div {
+    order: -1; /* This moves the image-div to the top */
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .about-image {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+  }
+}

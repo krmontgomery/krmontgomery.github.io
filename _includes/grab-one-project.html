@@ -1,0 +1,19 @@
+<ul class="post-list">
+    <h1 class="post-list-heading" style="text-align: center;">Latest Project</h1>
+    {% for project in site.projects limit: 1 %}
+    <li class="posts-item">
+        <a class="post-link" href="{{ project.url }}">
+            <h1 id="post-title">
+                {{ project.title }}
+            </h1>
+            <span class="index-post-date">{{ project.date | date: "%B %d, %Y" }}</span>
+            <p class="post-meta"> {{ project.content | strip_html | truncatewords: 10 }} </p>
+        </a>
+        <div class="projects-tag-container">
+            {% for tag in project.tags limit: 4 %}
+                <p>{{ tag }}</p>
+            {% endfor %}
+        </div>
+    </li> 
+    {% endfor %}
+</ul>

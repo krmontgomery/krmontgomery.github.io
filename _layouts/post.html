@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<article id="post">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="post-body col-lg-8">
+
+                <!-- Blog Post -->
+                <div class="post-meta-data">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <div class="post-author-div">
+                        <p style="color: #828282;">by</p><p class="post-author">{{ page.author}}</p>
+                    </div>
+                    <div class="post-date-div">
+                        <p style="color: #828282;">Posted on </p>
+                        <p class="post-date">{{ page.date | date: "%B %d, %Y"}}</p>
+                    </div>
+                </div>
+
+                
+                {% if page.image %}
+                <div class="post-image-div">
+                    <!-- Preview Image -->
+                   <img class="post-image" src="http://placehold.it/900x300" alt="{{ page.imageinfo }}">
+                </div>
+                {% endif %}
+                
+
+
+                <!-- Post Content -->
+                {% if page.lead %}
+                <p class="lead">{{ page.lead }}</p>
+                {% endif %}
+                
+                {{ page.content }}
+
+                
+                <!-- Post Tags -->
+                {% if page.tags %}
+                <p class="tag-title">TAGS</p>
+                <div class="post-tag-container">
+                    {% for tag in page.tags%}
+                    <p>{{ tag }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <hr style="width: 100%;">
+
+                <div class="bottom">
+                    {% if page.previous %} 
+                    <div class="previous-link" style="float: left;">
+                        <h3>Previous Article</h3>
+                        <a rel="prev" style="text-align: left;" href="{{ page.previous.url }}">
+                            <p>
+                                {{ page.previous.title}} - {{ page.previous.description | truncatewords: 4}}
+                            </p>
+                        </a>
+                    </div>
+                    {% endif %}
+                    
+                    {% if page.next %} 
+                    <div class="next-link justify-content-end text-right" style="float: right;">
+                        <h3>
+                            Next Article
+                        </h3>
+                        <a rel="next" href="{{ page.next.url }}">
+                            <p>
+                                {{ page.next.title}} - {{ page.next.description | truncatewords: 4}}
+                            </p>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<hr style="width: 100%;">
+<div class="back-to-posts">
+    <a href="/posts/">&#8629; Back to Posts</a>
+</div>
