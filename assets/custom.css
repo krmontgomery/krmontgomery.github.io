@@ -397,10 +397,14 @@ margin-top: 20%;
   margin-top: 15px;
   justify-items: center;
   text-align: center;
+  align-items: center;
 }
 
-.footer-info p {
+.footer-p {
   width: 85%;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 
