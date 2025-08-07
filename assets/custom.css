@@ -1,5 +1,38 @@
 /* Navigation */
 
+/* Index Page */
+.index-project-links {
+  color:#22b17a;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-weight: bold;
+  bottom: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#index-project-githublink {
+  color: white;
+  text-decoration: none;
+}
+
+#go-to-projects {
+  color:white;
+}
+
+#index-project-title {
+  color: #f8f8f8;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+#index-post-title {
+  color: #f8f8f8;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
 /* About Page */
 .about-container {
   display: grid;
@@ -21,17 +54,23 @@
 /* Index Who */
 .index-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .index-posts {
   width: 60%;
-  margin-right: 30px;
+  justify-items: center;
 }
 
 .index-projects {
   width:60%; 
-  text-align:right;
+  justify-items: center;
 }
+
 .who-container {
   display: flex;
   flex-direction: column;
@@ -50,12 +89,35 @@
 /* Posts */
 .posts-container {
   margin-top: 60px;
+  justify-items: center;
 }
 
-.posts-item {
+.index-projects-item {
   margin-bottom:25px;
   text-align: center;
   margin-top: 5px;
+  height: auto;
+  /* padding: 8px 8px; */
+  background-color: #363644;
+  border: 1px solid #6b6b79;
+}
+
+.index-posts-item {
+  margin-bottom:25px;
+  text-align: center;
+  margin-top: 5px;
+  height: auto;
+  /* padding: 8px 8px; */
+  background-color: #363644;
+  border: 1px solid #6b6b79;
+}
+
+.posts-item {
+  width: 70%;
+  margin-bottom:25px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 8px 8px;
   background-color: #363644;
   border: 1px solid #6b6b79;
 }
@@ -67,6 +129,7 @@
   gap: 1rem;
   justify-content: center;
   font-weight: bold;
+  margin: 1rem 0;
 }
 
 
@@ -97,9 +160,9 @@
 
 .posts-meta-content {
   text-align: left;
-  width: 75%;
   font-size: 16px;
   color: #828282;
+  margin: 0 8px;
 }
 
 /* Post */
@@ -148,16 +211,25 @@ margin-top: 20%;
 
 .post-meta {
   color: #828282;
-  
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .post-meta-data {
   text-align: center;
 }
 
+.index-post-list {
+  list-style: none;
+  max-width: 95%;  
+  text-align: center;
+}
 
 .post-list {
   list-style: none;
+  max-width: 100%;
+  justify-items: center;
 }
 
 .post-link {
@@ -225,7 +297,7 @@ margin-top: 20%;
 }
 
 .projects-item {
-  max-width: 48%;
+  max-width: 32%;
   margin-bottom:25px;
   text-align: center;
   margin-top: 5px;
@@ -271,6 +343,13 @@ margin-top: 20%;
   width: 100%;
   height: 220px
 }
+
+@media screen and (max-width: 950px) {
+  .projects-item {
+    max-width: 48%;
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   .projects-list {
@@ -364,7 +443,25 @@ margin-top: 20%;
   justify-content: center;
 }
 
+.project-links {
+  color:#22b17a;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#project-githublink {
+  color: white;
+  text-decoration: none;
+}
+
 /* misc */
+.who-aboutme {
+  max-width: 80%;
+}
+
 .tag-title {
   text-align: center;
   margin-top: 50px;
@@ -465,12 +562,12 @@ margin-top: 20%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
   
   .index-posts {
     width: 80%;
-    margin-right:0;
+    /* margin-right:0; */
   }
   
   .index-projects {

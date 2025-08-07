@@ -145,12 +145,12 @@ pre > code {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - 30px * 2);
+  max-width: -webkit-calc(1000px - (30px * 2));
+  max-width: calc(1000px - 30px * 2);
   margin-right: auto;
   margin-left: auto;
-  /* padding-right: 30px;
-  padding-left: 30px; */
+  padding-right: 30px;
+  padding-left: 30px;
 }
 @media screen and (max-width: 800px) {
   .wrapper {
