@@ -1,6 +1,6 @@
 <ul class="index-post-list">
     <h1 class="post-list-heading" style="text-align: center;">Latest Project</h1>
-    {% for project in site.projects limit: 1 %}
+    {% assign project = site.projects.last %}
     <li class="index-projects-item">
         <h1 id="index-project-title">
             {{ project.title }}
@@ -12,5 +12,4 @@
             <a id="go-to-projects" href="/projects/">Go to Projects</a>
         </div>
     </li> 
-    {% endfor %}
 </ul>

@@ -7,7 +7,6 @@ date: 2025-08-05 10:38:30
 image: /assets/images/website.png
 categories: Projects
 tags:
-  - Projects
   - Jekyll
 ---
 
