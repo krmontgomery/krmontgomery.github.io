@@ -7,7 +7,7 @@
                 {{ post.title | truncatewords: 4}}
             </h1>
             <span class="index-post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-            <p class="post-meta">{{ post.content | strip_html | truncatewords: 18 }}</p>
+            <p class="post-meta">{{ post.content | strip_html | truncatewords: 12 }}</p>
         </a>
         {% if post.tags %}
         <div class="posts-tag-container">
