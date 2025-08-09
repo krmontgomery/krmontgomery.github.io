@@ -90,6 +90,7 @@
 .posts-container {
   margin-top: 60px;
   justify-items: center;
+  text-align: center;
 }
 
 .index-projects-item {
